@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <style>
+        .is-paddingless-horizontal {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+        }
+        
+        .grid * {
+            grid-column: md;
+        }
+        
+        .grid-xl {
+            grid-column: xl;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- .section -->
+    <section class="section is-paddingless-horizontal">
+        <div class="container grid">
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="is-active">
+                        <a href="#" aria-current="page">
+                           beautiful
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- /.section -->
+
+</body>
+
+</html>
