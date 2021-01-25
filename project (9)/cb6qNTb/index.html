@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html>
-	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hello Bulma!</title>
-		<link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-		<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-        <!-- <link rel="stylesheet" href="styles/debug.css"> -->
-		<link rel="stylesheet" href="styles/helpers.css">
-		<style>
 
-.hero {
-	background: black url(images/hero-1.jpg) center / cover;
-}
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <link rel="stylesheet" href="styles/helpers.css">
+    <style>
+        .hero {
+            background: black url(images/hero-1.jpg) center / cover;
+        }
+        
+        @media (max-width: 1024px) {
+            .hero {
+                background: black url(images/hero-2.jpg) center / cover;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                background: black url(images/hero-3.jpg) center / cover;
+            }
+        }
+    </style>
+</head>
 
-@media (max-width: 1024px) { .hero { background: black url(images/hero-2.jpg) center / cover; } }
-@media (max-width:  768px) { .hero { background: black url(images/hero-3.jpg) center / cover; } }
+<body>
 
-		</style>
-	</head>
-	<body>
+    <!-- .hero -->
+    <section class="hero is-fullheight">
+        <nav class="hero-head">
+            <div class="columns is-mobile is-marginless heading has-text-weight-bold ">
+                <div class="column left">
+                    <figure class="navbar-item image">
+                        <img src="images/tesla.svg" style="width: 6.25rem; height: 1rem;">
+                    </figure>
+                </div>
+                <div class="column center desktop">
+                    <p class="navbar-item has-text-black">Model S</p>
+                    <p class="navbar-item has-text-black">Model X</p>
+                    <p class="navbar-item has-text-black"> Model 3</p>
+                    <p class="navbar-item has-text-white">Roadster</p>
+                    <p class="navbar-item has-text-black">Energy</p>
+                </div>
+                <div class="column right">
+                    <p class="navbar-item has-text-black desktop">Shop</p>
+                    <p class="navbar-item has-text-black desktop">Sign In</p>
+                    <figure class="navbar-item image has-text-black">
+                        <i class="fas fa-bars center" style="width: 1rem; height: 1rem;"></i>
+                    </figure>
+                </div>
+            </div>
+        </nav>
+        <header class="hero-body">
+            <div class="is-overlay has-text-centered single-spaced" style="top:82px">
+                <h1 class="subtitle is-4 has-text-weight-light has-text-black">Tesla</h1>
+                <h2 class="title is-1 has-text-black">Roadster</h2>
+            </div>
+        </header>
+    </section>
+    <!-- /.hero -->
 
-<!-- .hero -->
-<section class="hero is-fullheight">
+</body>
 
-</section>
-<!-- /.hero -->
-
-	</body>
 </html>
